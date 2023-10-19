@@ -8,25 +8,58 @@
         <hr/>
 
         <select>
-            <option value"" disabled selected hidden>Chooose your country</option>
+            <option value"" disabled selected hidden>Choose your country</option>
             <option class="abc">America</option>
             <option class="abc">India</option>
             <option class="abc">France</option>
             <option class="abc">Indonasia</option>
             <option class="abc">Germany</option>
             <option class="abc">Italy</option>
+            <option class="abc">Russia</option>
+            <option class="abc">Europe</option>
+            <option class="abc">England</option>
+            <option class="abc">Japan</option>
+            <option class="abc">Iran</option>
+            <option class="abc">Island</option>
+            <option class="abc">United Kingdom</option>
+            <option class="abc">China</option>
+            <option class="abc">Ireland</option>
+            <option class="abc">Afganisthan</option>
+            <option class="abc">Portugal</option>
+            <option class="abc">Brazil</option>
+            <option class="abc">Belgium</option>
+            <option class="abc">Hungary</option>
+            <option class="abc">Philippines</option>
+            <option class="abc">Kenya</option>
+            <option class="abc">Iceland</option>
+            <option class="abc">Turkiye</option>
+            <option class="abc">Colombia</option>
+            <option class="abc">Greece</option>
+            <option class="abc">Libya</option>
+            <option class="abc">Cuba</option>
         </select>
-        <input id="mytext">
-        <button onclick="search()">Click here</button>
+           <input type="text" placeholder="          Enter here" id="search"/>
+           <button onclick="search()">Click here</button>
+           <script>
+            function search(){
+                var x=document.getElementById("search").value;
+                var element=[];
+                element= document.getElementsByClassName('abc');
+                for (var i=0;i<=element.length;i++){
+                    var option=element[i].innerHTML;
+                    if(option.substring(0,x.length)==x){
 
-        <script>
-            function  Search(){
-                var x = document.getelementById("mytext").value
-                var element = [];
-                element = document.getelementById("abc")
+                    }
+                    else{
+                        element[i].innerHTML="";
+                    }
+                }
+
+
             }
 
-        </script>
+            
+           </script>
 
     </body>
 </html>
